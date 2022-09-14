@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import LogoSrc from "../../assets/images/logo.png";
+import CopyImg from "../../assets/images/Copyright-color.svg";
 
 function LetfSection() {
     return (
@@ -20,17 +21,23 @@ function LetfSection() {
                 </TopSection>
                 <BottomSection>
                     <Bottombtn>
-                        <BtnLogo></BtnLogo>
+                        <BtnLogo>L</BtnLogo>
                         <BtnCaption>Lesliya k.</BtnCaption>
                     </Bottombtn>
+
                     <Bottombtn>
-                        <BtnLogo></BtnLogo>
+                        <BtnLogo>C</BtnLogo>
                         <BtnCaption>Camaron w.</BtnCaption>
                     </Bottombtn>
+
                     <Bottombtn>
-                        <BtnLogo></BtnLogo>
+                        <BtnLogo>J</BtnLogo>
                         <BtnCaption>Jacob j.</BtnCaption>
                     </Bottombtn>
+                    <CopyDiv>
+                        <CopyRight src={CopyImg} />
+                        <CopyText>2022 CosyPOS App</CopyText>
+                    </CopyDiv>
                 </BottomSection>
             </Container>
         </>
@@ -93,12 +100,24 @@ const BtnLogo = styled.span`
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    &:nth-child(2n) {
-        background: red !important;
-    }
+    background-color: #c3e9de;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
 `;
 const BtnCaption = styled.small`
     color: #fff;
     font-size: 18px;
     display: inline-block;
+`;
+const CopyRight = styled.img``;
+const CopyText = styled.small`
+    margin-left: 12px;
+    color: #a6a6a6;
+`;
+const CopyDiv = styled.div`
+    display: flex;
+    margin-top: 48px;
 `;
