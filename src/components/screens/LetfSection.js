@@ -49,7 +49,6 @@ export default LetfSection;
 const Container = styled.section`
     background: #000;
     width: 20%;
-    height: 100vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
