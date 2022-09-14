@@ -1,7 +1,17 @@
 import React from "react";
+import styled from "styled-components";
 
 function RightSection() {
-    return <div>RightSection</div>;
+    return (
+        <>
+            <Container></Container>
+        </>
+    );
 }
 
 export default RightSection;
+
+const Container = styled.section`
+    width: 20%;
+    height: 100vh;
+`;

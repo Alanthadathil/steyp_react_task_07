@@ -171,7 +171,7 @@ const SearchIcon = styled.img`
 const ProductSection = styled.section``;
 const TopSection = styled.div`
     padding: 20px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #404141;
 `;
 const Products = styled.div`
     display: grid;
@@ -273,7 +273,9 @@ const ItemQ = styled.h5`
     font-size: 16px;
     color: #878180;
 `;
-const BottomSection = styled.section``;
+const BottomSection = styled.section`
+    padding: 20px;
+`;
 const BottomProducts = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -282,11 +284,51 @@ const BottomProducts = styled.div`
     grid-row-gap: 16px;
     height: 350px;
 `;
-const BItem1 = styled.div``;
-const BItem2 = styled.div``;
-const BItem3 = styled.div``;
-const BItem4 = styled.div``;
-const BItem5 = styled.div``;
-const BItem6 = styled.div``;
-const BItem7 = styled.div``;
-const BItem8 = styled.div``;
+const BItem1 = styled.div`
+    grid-area: 1 / 1 / 2 / 2;
+    background: #2c2c2d;
+    border-radius: 8px;
+    cursor: pointer;
+`;
+const BItem2 = styled.div`
+    grid-area: 1 / 2 / 2 / 3;
+    background: #2c2c2d;
+    border-radius: 8px;
+    cursor: pointer;
+`;
+const BItem3 = styled.div`
+    grid-area: 1 / 3 / 2 / 4;
+    background: #2c2c2d;
+    border-radius: 8px;
+    cursor: pointer;
+`;
+const BItem4 = styled.div`
+    grid-area: 1 / 4 / 2 / 5;
+    background: #2c2c2d;
+    border-radius: 8px;
+    cursor: pointer;
+`;
+const BItem5 = styled.div`
+    grid-area: 2 / 1 / 3 / 2;
+    background: #2c2c2d;
+    border-radius: 8px;
+    cursor: pointer;
+`;
+const BItem6 = styled.div`
+    grid-area: 2 / 2 / 3 / 3;
+    background: #2c2c2d;
+    border-radius: 8px;
+    cursor: pointer;
+`;
+const BItem7 = styled.div`
+    grid-area: 2 / 3 / 3 / 4;
+    background: #2c2c2d;
+    border-radius: 8px;
+    cursor: pointer;
+`;
+const BItem8 = styled.div`
+    grid-area: 2 / 4 / 3 / 5;
+    background: #2c2c2d;
+    border-radius: 8px;
+    cursor: pointer;
+`;
