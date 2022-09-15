@@ -414,13 +414,55 @@ function MiddleSection() {
                 </ProductSection>
                 <BottomCountSec>
                     <CountFisrt>
-                        <TButton></TButton>
+                        <TButton1>T4</TButton1>
+                        <CountName>Leslie K.</CountName>
+                        <CountNameDiv>
+                            <Orders>6 items</Orders>
+                            <Arrow>
+                                <ArrowImg
+                                    src={
+                                        require("../../assets/images/Arrow.svg")
+                                            .default
+                                    }
+                                    CountNameDiv
+                                />
+                            </Arrow>
+                            <Kitchen>Kitchen</Kitchen>
+                        </CountNameDiv>
                     </CountFisrt>
                     <CountSecond>
-                        <TButton></TButton>
+                        <TButton2>T2</TButton2>
+                        <CountName>Leslie K.</CountName>
+                        <CountNameDiv>
+                            <Orders>6 items</Orders>
+                            <Arrow>
+                                <ArrowImg
+                                    src={
+                                        require("../../assets/images/Arrow.svg")
+                                            .default
+                                    }
+                                    CountNameDiv
+                                />
+                            </Arrow>
+                            <Kitchen>Kitchen</Kitchen>
+                        </CountNameDiv>
                     </CountSecond>
                     <CountThird>
-                        <TButton></TButton>
+                        <TButton3>T4</TButton3>
+                        <CountName>Leslie K.</CountName>
+                        <CountNameDiv>
+                            <Orders>6 items</Orders>
+                            <Arrow>
+                                <ArrowImg
+                                    src={
+                                        require("../../assets/images/Arrow.svg")
+                                            .default
+                                    }
+                                    CountNameDiv
+                                />
+                            </Arrow>
+                            <Kitchen>Kitchen</Kitchen>
+                        </CountNameDiv>
                     </CountThird>
                 </BottomCountSec>
             </Container>
@@ -431,7 +473,7 @@ function MiddleSection() {
 export default MiddleSection;
 
 const Container = styled.section`
-    width: 60%;
+    width: 65%;
     background: #000;
 `;
 
@@ -557,7 +599,7 @@ const ItemQ = styled.h5`
     color: #878180;
 `;
 const BottomSection = styled.section`
-    padding: 20px;
+    padding: 20px 20px 34px 20px;
 `;
 const BottomProducts = styled.div`
     display: grid;
@@ -628,7 +670,9 @@ const ItemTop = styled.div`
     color: #909091;
     margin-bottom: 12px;
 `;
-const Orders = styled.span``;
+const Orders = styled.span`
+    color: #909091;
+`;
 const Arrow = styled.span`
     display: inline-block;
     width: 18px;
@@ -638,7 +682,9 @@ const ArrowImg = styled.img`
     display: inline-block;
     width: 100%;
 `;
-const Kitchen = styled.span``;
+const Kitchen = styled.span`
+    color: #909091;
+`;
 const BItemName = styled.h3`
     font-size: 18px;
     color: #fff;
@@ -680,8 +726,66 @@ const Minus = styled.img`
     display: inline-block;
     width: 100%;
 `;
-const BottomCountSec = styled.section``;
-const CountFisrt = styled.div``;
-const CountSecond = styled.div``;
-const CountThird = styled.div``;
-const TButton = styled.span``;
+const BottomCountSec = styled.section`
+    display: flex;
+    border-top: 1px solid #909091;
+`;
+const CountFisrt = styled.div`
+    border-right: 1px solid #909091;
+    display: flex;
+    align-items: center;
+    width: 33.3%;
+    flex-wrap: wrap;
+    padding-top: 20px;
+`;
+const CountSecond = styled.div`
+    border-right: 1px solid #909091;
+    display: flex;
+    align-items: center;
+    width: 33.3%;
+    flex-wrap: wrap;
+    padding-top: 20px;
+`;
+const CountThird = styled.div`
+    display: flex;
+    align-items: center;
+    width: 33.3%;
+    flex-wrap: wrap;
+    padding-top: 20px;
+`;
+const TButton1 = styled.span`
+    background: #c8cbee;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 12px 14px;
+    margin-left: 20px;
+    font-size: 24px;
+    color: #000;
+`;
+const TButton2 = styled.span`
+    background: #3e3e3e;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 12px 14px;
+    margin-left: 20px;
+    font-size: 24px;
+    color: #fff;
+`;
+const TButton3 = styled.span`
+    background: #2c2d2c;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 12px 14px;
+    margin-left: 20px;
+    font-size: 24px;
+    color: #fff;
+`;
+const CountName = styled.h4`
+    color: #fff;
+    margin-left: 18px;
+`;
+const CountNameDiv = styled.div`
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+`;
