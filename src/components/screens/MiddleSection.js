@@ -129,17 +129,300 @@ function MiddleSection() {
                     </TopSection>
                     <BottomSection>
                         <BottomProducts>
-                            <BItem1></BItem1>
-                            <BItem2></BItem2>
-                            <BItem3></BItem3>
-                            <BItem4></BItem4>
-                            <BItem5></BItem5>
-                            <BItem6></BItem6>
-                            <BItem7></BItem7>
-                            <BItem8></BItem8>
+                            <BItem1>
+                                <ItemTop>
+                                    <Orders>Orders</Orders>
+                                    <Arrow>
+                                        <ArrowImg
+                                            src={
+                                                require("../../assets/images/Arrow.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Arrow>
+                                    <Kitchen>Kitchen</Kitchen>
+                                </ItemTop>
+                                <BItemName>FIsh and Chips</BItemName>
+                                <Price>$7.50</Price>
+                                <ItemBottom>
+                                    <Increament>
+                                        <Minus
+                                            src={
+                                                require("../../assets/images/minus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Increament>
+                                    <Count>0</Count>
+                                    <Decrement>
+                                        <Plus
+                                            src={
+                                                require("../../assets/images/plus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Decrement>
+                                </ItemBottom>
+                            </BItem1>
+                            <BItem2>
+                                <ItemTop>
+                                    <Orders>Orders</Orders>
+                                    <Arrow>
+                                        <ArrowImg
+                                            src={
+                                                require("../../assets/images/Arrow.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Arrow>
+                                    <Kitchen>Kitchen</Kitchen>
+                                </ItemTop>
+                                <BItemName>Roast Chicken</BItemName>
+                                <Price>$7.50</Price>
+                                <ItemBottom>
+                                    <Increament>
+                                        <Minus
+                                            src={
+                                                require("../../assets/images/minus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Increament>
+                                    <Count>2</Count>
+                                    <Decrement>
+                                        <Plus
+                                            src={
+                                                require("../../assets/images/plus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Decrement>
+                                </ItemBottom>
+                            </BItem2>
+                            <BItem3>
+                                <ItemTop>
+                                    <Orders>Orders</Orders>
+                                    <Arrow>
+                                        <ArrowImg
+                                            src={
+                                                require("../../assets/images/Arrow.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Arrow>
+                                    <Kitchen>Kitchen</Kitchen>
+                                </ItemTop>
+                                <BItemName>Fillet Steak</BItemName>
+                                <Price>$7.50</Price>
+                                <ItemBottom>
+                                    <Increament>
+                                        <Minus
+                                            src={
+                                                require("../../assets/images/minus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Increament>
+                                    <Count>0</Count>
+                                    <Decrement>
+                                        <Plus
+                                            src={
+                                                require("../../assets/images/plus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Decrement>
+                                </ItemBottom>
+                            </BItem3>
+                            <BItem4>
+                                <ItemTop>
+                                    <Orders>Orders</Orders>
+                                    <Arrow>
+                                        <ArrowImg
+                                            src={
+                                                require("../../assets/images/Arrow.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Arrow>
+                                    <Kitchen>Kitchen</Kitchen>
+                                </ItemTop>
+                                <BItemName>Beafsteak</BItemName>
+                                <Price>$7.50</Price>
+                                <ItemBottom>
+                                    <Increament>
+                                        <Minus
+                                            src={
+                                                require("../../assets/images/minus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Increament>
+                                    <Count>0</Count>
+                                    <Decrement>
+                                        <Plus
+                                            src={
+                                                require("../../assets/images/plus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Decrement>
+                                </ItemBottom>
+                            </BItem4>
+                            <BItem5>
+                                <ItemTop>
+                                    <Orders>Orders</Orders>
+                                    <Arrow>
+                                        <ArrowImg
+                                            src={
+                                                require("../../assets/images/Arrow.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Arrow>
+                                    <Kitchen>Kitchen</Kitchen>
+                                </ItemTop>
+                                <BItemName>Roast Beef</BItemName>
+                                <Price>$7.50</Price>
+                                <ItemBottom>
+                                    <Increament>
+                                        <Minus
+                                            src={
+                                                require("../../assets/images/minus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Increament>
+                                    <Count>0</Count>
+                                    <Decrement>
+                                        <Plus
+                                            src={
+                                                require("../../assets/images/plus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Decrement>
+                                </ItemBottom>
+                            </BItem5>
+                            <BItem6>
+                                <ItemTop>
+                                    <Orders>Orders</Orders>
+                                    <Arrow>
+                                        <ArrowImg
+                                            src={
+                                                require("../../assets/images/Arrow.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Arrow>
+                                    <Kitchen>Kitchen</Kitchen>
+                                </ItemTop>
+                                <BItemName>Buffello Wings</BItemName>
+                                <Price>$7.50</Price>
+                                <ItemBottom>
+                                    <Increament>
+                                        <Minus
+                                            src={
+                                                require("../../assets/images/minus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Increament>
+                                    <Count>0</Count>
+                                    <Decrement>
+                                        <Plus
+                                            src={
+                                                require("../../assets/images/plus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Decrement>
+                                </ItemBottom>
+                            </BItem6>
+                            <BItem7>
+                                <ItemTop>
+                                    <Orders>Orders</Orders>
+                                    <Arrow>
+                                        <ArrowImg
+                                            src={
+                                                require("../../assets/images/Arrow.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Arrow>
+                                    <Kitchen>Kitchen</Kitchen>
+                                </ItemTop>
+                                <BItemName>Lobster</BItemName>
+                                <Price>$7.50</Price>
+                                <ItemBottom>
+                                    <Increament>
+                                        <Minus
+                                            src={
+                                                require("../../assets/images/minus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Increament>
+                                    <Count>0</Count>
+                                    <Decrement>
+                                        <Plus
+                                            src={
+                                                require("../../assets/images/plus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Decrement>
+                                </ItemBottom>
+                            </BItem7>
+                            <BItem8>
+                                <ItemTop>
+                                    <Orders>Orders</Orders>
+                                    <Arrow>
+                                        <ArrowImg
+                                            src={
+                                                require("../../assets/images/Arrow.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Arrow>
+                                    <Kitchen>Kitchen</Kitchen>
+                                </ItemTop>
+                                <BItemName>Red Cavier</BItemName>
+                                <Price>$7.50</Price>
+                                <ItemBottom>
+                                    <Increament>
+                                        <Minus
+                                            src={
+                                                require("../../assets/images/minus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Increament>
+                                    <Count>0</Count>
+                                    <Decrement>
+                                        <Plus
+                                            src={
+                                                require("../../assets/images/plus.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </Decrement>
+                                </ItemBottom>
+                            </BItem8>
                         </BottomProducts>
                     </BottomSection>
                 </ProductSection>
+                <BottomCountSec>
+                    <CountFisrt>
+                        <TButton></TButton>
+                    </CountFisrt>
+                    <CountSecond>
+                        <TButton></TButton>
+                    </CountSecond>
+                    <CountThird>
+                        <TButton></TButton>
+                    </CountThird>
+                </BottomCountSec>
             </Container>
         </>
     );
@@ -282,53 +565,123 @@ const BottomProducts = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    height: 350px;
 `;
 const BItem1 = styled.div`
     grid-area: 1 / 1 / 2 / 2;
     background: #2c2c2d;
     border-radius: 8px;
     cursor: pointer;
+    padding: 12px;
 `;
 const BItem2 = styled.div`
     grid-area: 1 / 2 / 2 / 3;
     background: #2c2c2d;
     border-radius: 8px;
     cursor: pointer;
+    padding: 12px;
 `;
 const BItem3 = styled.div`
     grid-area: 1 / 3 / 2 / 4;
     background: #2c2c2d;
     border-radius: 8px;
     cursor: pointer;
+    padding: 12px;
 `;
 const BItem4 = styled.div`
     grid-area: 1 / 4 / 2 / 5;
     background: #2c2c2d;
     border-radius: 8px;
     cursor: pointer;
+    padding: 12px;
 `;
 const BItem5 = styled.div`
     grid-area: 2 / 1 / 3 / 2;
     background: #2c2c2d;
     border-radius: 8px;
     cursor: pointer;
+    padding: 12px;
 `;
 const BItem6 = styled.div`
     grid-area: 2 / 2 / 3 / 3;
     background: #2c2c2d;
     border-radius: 8px;
     cursor: pointer;
+    padding: 12px;
 `;
 const BItem7 = styled.div`
     grid-area: 2 / 3 / 3 / 4;
     background: #2c2c2d;
     border-radius: 8px;
     cursor: pointer;
+    padding: 12px;
 `;
 const BItem8 = styled.div`
     grid-area: 2 / 4 / 3 / 5;
     background: #2c2c2d;
     border-radius: 8px;
     cursor: pointer;
+    padding: 12px;
 `;
+const ItemTop = styled.div`
+    display: flex;
+    align-items: center;
+    color: #909091;
+    margin-bottom: 12px;
+`;
+const Orders = styled.span``;
+const Arrow = styled.span`
+    display: inline-block;
+    width: 18px;
+    margin: 6px 12px 0;
+`;
+const ArrowImg = styled.img`
+    display: inline-block;
+    width: 100%;
+`;
+const Kitchen = styled.span``;
+const BItemName = styled.h3`
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 8px;
+`;
+const Price = styled.h5`
+    color: #909091;
+    font-size: 16px;
+`;
+const ItemBottom = styled.div`
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    padding: 6px 8px;
+    justify-content: end;
+`;
+const Plus = styled.img`
+    display: inline-block;
+    width: 100%;
+`;
+const Count = styled.small`
+    color: #fff;
+    font-size: 16px;
+    margin: 0 12px;
+`;
+const Increament = styled.span`
+    display: inline-block;
+    border: 1px solid #909091;
+    padding: 3px 6px;
+    border-radius: 8px;
+`;
+const Decrement = styled.span`
+    display: inline-block;
+    border: 1px solid #909091;
+    padding: 3px 6px;
+    border-radius: 8px;
+`;
+const Minus = styled.img`
+    display: inline-block;
+    width: 100%;
+`;
+const BottomCountSec = styled.section``;
+const CountFisrt = styled.div``;
+const CountSecond = styled.div``;
+const CountThird = styled.div``;
+const TButton = styled.span``;
