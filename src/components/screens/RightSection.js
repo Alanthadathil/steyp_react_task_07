@@ -77,9 +77,53 @@ function RightSection() {
                         </OrderRight>
                     </OrderTop>
                     <OrderBottom>
-                        <TotalText>Total</TotalText>
-                        <TotalPrice>$188.65</TotalPrice>
+                        <TotalDiv>
+                            <TotalText>Total</TotalText>
+                            <TotalPrice>$188.65</TotalPrice>
+                        </TotalDiv>
                     </OrderBottom>
+                    <PaymentDiv>
+                        <PayTitle>Payment Method</PayTitle>
+                        <PayOptions>
+                            <Options>
+                                <FirstOption>
+                                    <ImgDiv>
+                                        <PayImg
+                                            src={
+                                                require("../../assets/images/white2.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </ImgDiv>
+                                    <OptionText>Cash</OptionText>
+                                </FirstOption>
+
+                                <SecondOption>
+                                    <ImgDiv>
+                                        <PayImg
+                                            src={
+                                                require("../../assets/images/white.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </ImgDiv>
+                                    <OptionText>Debit Card</OptionText>
+                                </SecondOption>
+                                <ThirdOption>
+                                    <ImgDivLast>
+                                        <PayImg
+                                            src={
+                                                require("../../assets/images/Scan.svg")
+                                                    .default
+                                            }
+                                        />
+                                    </ImgDivLast>
+                                    <OptionText>E-wallet</OptionText>
+                                </ThirdOption>
+                            </Options>
+                        </PayOptions>
+                    </PaymentDiv>
+                    <OrderButton>Place Order</OrderButton>
                 </BottomDiv>
             </Container>
         </>
@@ -196,11 +240,69 @@ const SecondPrice = styled.h5`
     margin-bottom: 18px;
 `;
 const OrderBottom = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
     margin-top: 20px;
+    color: #fff;
 `;
 const TotalText = styled.h3``;
 const TotalPrice = styled.h3``;
+const TotalDiv = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`;
+const PaymentDiv = styled.div`
+    margin-top: 164px;
+`;
+const PayTitle = styled.h4`
+    font-size: 16px;
+    color: #898988;
+    margin-bottom: 12px;
+`;
+const PayOptions = styled.div``;
+const Options = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+const FirstOption = styled.div``;
+const SecondOption = styled.div``;
+const ThirdOption = styled.div``;
+const OptionText = styled.h6`
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 0 24px 0;
+    color: #898988;
+`;
+const ImgDiv = styled.span`
+    display: inline-block;
+    padding: 14px 34px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+`;
+const ImgDivLast = styled.span`
+    display: inline-block;
+    padding: 14px 34px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+`;
+const PayImg = styled.img`
+    width: 100%;
+    display: inline-block;
+`;
+const OrderButton = styled.button`
+    background: #fff;
+    font-size: 18px;
+    padding: 18px 110px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 25px;
+    cursor: pointer;
+    &:hover {
+        background: #000;
+        color: #fff;
+        border: 1px solid #fff;
+        transition: 0.5s;
+    }
+`;
