@@ -478,7 +478,8 @@ const Container = styled.section`
 `;
 
 const Form = styled.form`
-    padding: 28px 0;
+    padding-top: 28px;
+    padding-left: 20px;
     position: relative;
 `;
 
@@ -488,7 +489,7 @@ const Input = styled.input`
 `;
 const SearchIcon = styled.img`
     position: absolute;
-    left: 4px;
+    left: 22px;
     width: 18px;
     color: red;
     top: 43px;

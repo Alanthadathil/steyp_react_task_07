@@ -33,9 +33,36 @@ function RightSection() {
                                 <Price>$25.50</Price>
                             </PriceSection>
                         </Items>
-                        <Items></Items>
-                        <Items></Items>
-                        <Items></Items>
+                        <Items>
+                            <ItemDetails>
+                                <Serial>2</Serial>
+                                <ItemName>Red caviar</ItemName>
+                                <ItemCount>x3</ItemCount>
+                            </ItemDetails>
+                            <PriceSection>
+                                <Price>$36.50</Price>
+                            </PriceSection>
+                        </Items>
+                        <Items>
+                            <ItemDetails>
+                                <Serial>3</Serial>
+                                <ItemName>German sausage</ItemName>
+                                <ItemCount>x1</ItemCount>
+                            </ItemDetails>
+                            <PriceSection>
+                                <Price>$25.50</Price>
+                            </PriceSection>
+                        </Items>
+                        <Items>
+                            <ItemDetails>
+                                <Serial>4</Serial>
+                                <ItemName>Irish cream coffee</ItemName>
+                                <ItemCount>x1</ItemCount>
+                            </ItemDetails>
+                            <PriceSection>
+                                <Price>$4.50</Price>
+                            </PriceSection>
+                        </Items>
                     </List>
                 </MiddleDiv>
             </Container>
@@ -53,6 +80,7 @@ const Container = styled.section`
 const TopDiv = styled.div`
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 `;
 const TopRight = styled.div``;
 const TopLeft = styled.div``;
@@ -82,11 +110,13 @@ const Items = styled.li`
     justify-content: space-between;
     height: 70px;
     border-radius: 8px;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     align-items: center;
+    padding: 20px;
 `;
 const ItemDetails = styled.div`
     display: flex;
+    align-items: center;
 `;
 const Serial = styled.span`
     height: 24px;
@@ -98,9 +128,12 @@ const Serial = styled.span`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 12px;
 `;
 const ItemName = styled.h3`
     color: #fff;
+    margin-right: 12px;
+    font-size: 18px;
 `;
 const ItemCount = styled.small`
     color: #818180;
@@ -110,4 +143,5 @@ const PriceSection = styled.div`
 `;
 const Price = styled.h5`
     color: #fff;
+    font-size: 16px;
 `;
