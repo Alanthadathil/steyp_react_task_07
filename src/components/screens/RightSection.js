@@ -65,6 +65,22 @@ function RightSection() {
                         </Items>
                     </List>
                 </MiddleDiv>
+                <BottomDiv>
+                    <OrderTop>
+                        <OrderLeft>
+                            <FirstText>Subtotal</FirstText>
+                            <SecondText>Tax 10%</SecondText>
+                        </OrderLeft>
+                        <OrderRight>
+                            <FirstPrice>$171.50</FirstPrice>
+                            <SecondPrice>$17.15</SecondPrice>
+                        </OrderRight>
+                    </OrderTop>
+                    <OrderBottom>
+                        <TotalText>Total</TotalText>
+                        <TotalPrice>$188.65</TotalPrice>
+                    </OrderBottom>
+                </BottomDiv>
             </Container>
         </>
     );
@@ -102,7 +118,9 @@ const RightLogo = styled.div`
     justify-content: center;
 `;
 const RightImg = styled.img``;
-const MiddleDiv = styled.div``;
+const MiddleDiv = styled.div`
+    margin-bottom: 28px;
+`;
 const List = styled.ul``;
 const Items = styled.li`
     background: #2c2d2c;
@@ -145,3 +163,44 @@ const Price = styled.h5`
     color: #fff;
     font-size: 16px;
 `;
+const BottomDiv = styled.div`
+    background: #2c2d2c;
+    border-radius: 8px;
+    padding: 20px;
+`;
+const OrderTop = styled.div`
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #fff;
+`;
+const FirstText = styled.h3`
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 18px;
+`;
+const SecondText = styled.h3`
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 18px;
+`;
+const OrderLeft = styled.div``;
+const OrderRight = styled.div``;
+const FirstPrice = styled.h5`
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 18px;
+`;
+const SecondPrice = styled.h5`
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 18px;
+`;
+const OrderBottom = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 20px;
+`;
+const TotalText = styled.h3``;
+const TotalPrice = styled.h3``;
