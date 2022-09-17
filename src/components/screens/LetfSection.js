@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import LogoSrc from "../../assets/images/logo.png";
 import CopyImg from "../../assets/images/Copyright-color.svg";
+import { Link } from "react-router-dom";
 
 function LetfSection() {
     return (
@@ -12,11 +13,21 @@ function LetfSection() {
                         <LogoImg src={LogoSrc} />
                     </Logo>
                     <List>
-                        <ListItem>Reservation</ListItem>
-                        <ListItem>Table Service</ListItem>
-                        <ListItem>Menu</ListItem>
-                        <ListItem>Delivery</ListItem>
-                        <ListItem>Accounting</ListItem>
+                        <Link to="/">
+                            <ListItem>Reservation</ListItem>
+                        </Link>
+                        <Link to="tableservice">
+                            <ListItem>Table Service</ListItem>
+                        </Link>
+                        <Link to="/">
+                            <ListItem>Menu</ListItem>
+                        </Link>
+                        <Link to="delivery">
+                            <ListItem>Delivery</ListItem>
+                        </Link>
+                        <Link to="accounting">
+                            <ListItem>Accounting</ListItem>
+                        </Link>
                     </List>
                 </TopSection>
                 <BottomSection>

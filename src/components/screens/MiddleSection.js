@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import SearchImg from "../../assets/images/search.svg";
 
 function MiddleSection() {
+    const [count, useQuentity] = useState(0);
+
+    const Add = () => {
+        useQuentity(count + 1);
+    };
+    const Remove = () => {
+        useQuentity(count - 1);
+    };
+
     return (
         <>
             <Container>
@@ -145,23 +154,23 @@ function MiddleSection() {
                                 <BItemName>FIsh and Chips</BItemName>
                                 <Price>$7.50</Price>
                                 <ItemBottom>
-                                    <Increament>
+                                    <Decrement onClick={() => Remove()}>
                                         <Minus
                                             src={
                                                 require("../../assets/images/minus.svg")
                                                     .default
                                             }
                                         />
-                                    </Increament>
-                                    <Count>0</Count>
-                                    <Decrement>
+                                    </Decrement>
+                                    <Count>{count}</Count>
+                                    <Increament onClick={() => Add()}>
                                         <Plus
                                             src={
                                                 require("../../assets/images/plus.svg")
                                                     .default
                                             }
                                         />
-                                    </Decrement>
+                                    </Increament>
                                 </ItemBottom>
                             </BItem1>
                             <BItem2>
@@ -180,23 +189,23 @@ function MiddleSection() {
                                 <BItemName>Roast Chicken</BItemName>
                                 <Price>$7.50</Price>
                                 <ItemBottom>
-                                    <Increament>
+                                    <Decrement onClick={() => Remove()}>
                                         <Minus
                                             src={
                                                 require("../../assets/images/minus.svg")
                                                     .default
                                             }
                                         />
-                                    </Increament>
-                                    <Count>2</Count>
-                                    <Decrement>
+                                    </Decrement>
+                                    <Count>{count}</Count>
+                                    <Increament onClick={() => Add()}>
                                         <Plus
                                             src={
                                                 require("../../assets/images/plus.svg")
                                                     .default
                                             }
                                         />
-                                    </Decrement>
+                                    </Increament>
                                 </ItemBottom>
                             </BItem2>
                             <BItem3>
@@ -215,23 +224,23 @@ function MiddleSection() {
                                 <BItemName>Fillet Steak</BItemName>
                                 <Price>$7.50</Price>
                                 <ItemBottom>
-                                    <Increament>
+                                    <Decrement onClick={() => Remove()}>
                                         <Minus
                                             src={
                                                 require("../../assets/images/minus.svg")
                                                     .default
                                             }
                                         />
-                                    </Increament>
-                                    <Count>0</Count>
-                                    <Decrement>
+                                    </Decrement>
+                                    <Count>{count}</Count>
+                                    <Increament onClick={() => Add()}>
                                         <Plus
                                             src={
                                                 require("../../assets/images/plus.svg")
                                                     .default
                                             }
                                         />
-                                    </Decrement>
+                                    </Increament>
                                 </ItemBottom>
                             </BItem3>
                             <BItem4>
@@ -250,23 +259,23 @@ function MiddleSection() {
                                 <BItemName>Beafsteak</BItemName>
                                 <Price>$7.50</Price>
                                 <ItemBottom>
-                                    <Increament>
+                                    <Decrement onClick={() => Remove()}>
                                         <Minus
                                             src={
                                                 require("../../assets/images/minus.svg")
                                                     .default
                                             }
                                         />
-                                    </Increament>
-                                    <Count>0</Count>
-                                    <Decrement>
+                                    </Decrement>
+                                    <Count>{count}</Count>
+                                    <Increament onClick={() => Add()}>
                                         <Plus
                                             src={
                                                 require("../../assets/images/plus.svg")
                                                     .default
                                             }
                                         />
-                                    </Decrement>
+                                    </Increament>
                                 </ItemBottom>
                             </BItem4>
                             <BItem5>
@@ -285,23 +294,23 @@ function MiddleSection() {
                                 <BItemName>Roast Beef</BItemName>
                                 <Price>$7.50</Price>
                                 <ItemBottom>
-                                    <Increament>
+                                    <Decrement onClick={() => Remove()}>
                                         <Minus
                                             src={
                                                 require("../../assets/images/minus.svg")
                                                     .default
                                             }
                                         />
-                                    </Increament>
-                                    <Count>0</Count>
-                                    <Decrement>
+                                    </Decrement>
+                                    <Count>{count}</Count>
+                                    <Increament onClick={() => Add()}>
                                         <Plus
                                             src={
                                                 require("../../assets/images/plus.svg")
                                                     .default
                                             }
                                         />
-                                    </Decrement>
+                                    </Increament>
                                 </ItemBottom>
                             </BItem5>
                             <BItem6>
@@ -320,23 +329,23 @@ function MiddleSection() {
                                 <BItemName>Buffello Wings</BItemName>
                                 <Price>$7.50</Price>
                                 <ItemBottom>
-                                    <Increament>
+                                    <Decrement onClick={() => Remove()}>
                                         <Minus
                                             src={
                                                 require("../../assets/images/minus.svg")
                                                     .default
                                             }
                                         />
-                                    </Increament>
-                                    <Count>0</Count>
-                                    <Decrement>
+                                    </Decrement>
+                                    <Count>{count}</Count>
+                                    <Increament onClick={() => Add()}>
                                         <Plus
                                             src={
                                                 require("../../assets/images/plus.svg")
                                                     .default
                                             }
                                         />
-                                    </Decrement>
+                                    </Increament>
                                 </ItemBottom>
                             </BItem6>
                             <BItem7>
@@ -355,23 +364,23 @@ function MiddleSection() {
                                 <BItemName>Lobster</BItemName>
                                 <Price>$7.50</Price>
                                 <ItemBottom>
-                                    <Increament>
+                                    <Decrement onClick={() => Remove()}>
                                         <Minus
                                             src={
                                                 require("../../assets/images/minus.svg")
                                                     .default
                                             }
                                         />
-                                    </Increament>
-                                    <Count>0</Count>
-                                    <Decrement>
+                                    </Decrement>
+                                    <Count>{count}</Count>
+                                    <Increament onClick={() => Add()}>
                                         <Plus
                                             src={
                                                 require("../../assets/images/plus.svg")
                                                     .default
                                             }
                                         />
-                                    </Decrement>
+                                    </Increament>
                                 </ItemBottom>
                             </BItem7>
                             <BItem8>
@@ -390,23 +399,23 @@ function MiddleSection() {
                                 <BItemName>Red Cavier</BItemName>
                                 <Price>$7.50</Price>
                                 <ItemBottom>
-                                    <Increament>
+                                    <Decrement onClick={() => Remove()}>
                                         <Minus
                                             src={
                                                 require("../../assets/images/minus.svg")
                                                     .default
                                             }
                                         />
-                                    </Increament>
-                                    <Count>0</Count>
-                                    <Decrement>
+                                    </Decrement>
+                                    <Count>{count}</Count>
+                                    <Increament onClick={() => Add()}>
                                         <Plus
                                             src={
                                                 require("../../assets/images/plus.svg")
                                                     .default
                                             }
                                         />
-                                    </Decrement>
+                                    </Increament>
                                 </ItemBottom>
                             </BItem8>
                         </BottomProducts>
@@ -417,7 +426,7 @@ function MiddleSection() {
                         <TButton1>T4</TButton1>
                         <CountName>Leslie K.</CountName>
                         <CountNameDiv>
-                            <Orders>6 items</Orders>
+                            <Orders>{count} items</Orders>
                             <Arrow>
                                 <ArrowImg
                                     src={
@@ -434,7 +443,7 @@ function MiddleSection() {
                         <TButton2>T2</TButton2>
                         <CountName>Leslie K.</CountName>
                         <CountNameDiv>
-                            <Orders>6 items</Orders>
+                            <Orders>{count} items</Orders>
                             <Arrow>
                                 <ArrowImg
                                     src={
@@ -451,7 +460,7 @@ function MiddleSection() {
                         <TButton3>T4</TButton3>
                         <CountName>Leslie K.</CountName>
                         <CountNameDiv>
-                            <Orders>6 items</Orders>
+                            <Orders>{count} items</Orders>
                             <Arrow>
                                 <ArrowImg
                                     src={

@@ -280,7 +280,7 @@ const PayTitle = styled.h4`
     font-size: 16px;
     color: #898988;
     margin-bottom: 12px;
-    margin-left: 26px;
+    margin-left: 2px;
 `;
 const PayOptions = styled.div``;
 const Options = styled.ul`

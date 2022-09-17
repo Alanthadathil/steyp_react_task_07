@@ -68,6 +68,7 @@ a:hover,
     -moz-opacity: 0.85;
     -khtml-opacity: 0.85;
     opacity: 0.85;
+    color: #fff;
 }
 @font-face {
     font-family: 'Poppins';
@@ -230,7 +231,7 @@ a:hover,
     font-style: italic;
     font-display: swap;
 }
-.active-link{
-    color: #fff;
+a{
+    color: #666;
 }
 
