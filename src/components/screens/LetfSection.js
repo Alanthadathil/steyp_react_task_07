@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import LogoSrc from "../../assets/images/logo.png";
 import CopyImg from "../../assets/images/Copyright-color.svg";
-import { Link, NavLink } from "react-router-dom";
 
 function LetfSection() {
     return (
@@ -13,31 +12,11 @@ function LetfSection() {
                         <LogoImg src={LogoSrc} />
                     </Logo>
                     <List>
-                        <ListItem>
-                            <NavLink to="/" className="activeLink">
-                                Reservation
-                            </NavLink>
-                        </ListItem>
-                        <ListItem>
-                            <NavLink to="/" className="activeLink">
-                                Table Service
-                            </NavLink>
-                        </ListItem>
-                        <ListItem>
-                            <NavLink to="/" className="activeLink">
-                                Menu
-                            </NavLink>
-                        </ListItem>
-                        <ListItem>
-                            <NavLink to="/" className="activeLink">
-                                Delivery
-                            </NavLink>
-                        </ListItem>
-                        <ListItem>
-                            <NavLink to="/" className="activeLink">
-                                Accounting
-                            </NavLink>
-                        </ListItem>
+                        <ListItem>Reservation</ListItem>
+                        <ListItem>Table Service</ListItem>
+                        <ListItem>Menu</ListItem>
+                        <ListItem>Delivery</ListItem>
+                        <ListItem>Accounting</ListItem>
                     </List>
                 </TopSection>
                 <BottomSection>

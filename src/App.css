@@ -230,4 +230,7 @@ a:hover,
     font-style: italic;
     font-display: swap;
 }
+.active-link{
+    color: #fff;
+}
 
