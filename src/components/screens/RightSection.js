@@ -142,12 +142,17 @@ function RightSection() {
 export default RightSection;
 
 const Container = styled.section`
-    width: 30%;
+    width: 35%;
     background: #000;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media all and (max-width: 640px) {
+        width: 40%;
+        padding: 10px;
+        display: none;
+    }
 `;
 const TopContainer = styled.div``;
 const TopDiv = styled.div`
@@ -160,6 +165,9 @@ const TopLeft = styled.div``;
 const RightText = styled.h3`
     color: #fff;
     font-size: 26px;
+    @media all and (max-width: 980px) {
+        font-size: 18px;
+    }
 `;
 const RightName = styled.h5`
     color: #898988;
@@ -188,6 +196,9 @@ const Items = styled.li`
     margin-bottom: 8px;
     align-items: center;
     padding: 20px;
+    @media all and (max-width: 980px) {
+        padding: 12px 10px;
+    }
 `;
 const ItemDetails = styled.div`
     display: flex;
@@ -213,8 +224,11 @@ const ItemName = styled.h3`
     @media all and (max-width: 1440px) {
         font-size: 13px;
     }
-    @media (max-width: 1050px) {
+    @media all and (max-width: 1050px) {
         width: 35%;
+    }
+    @media all and (max-width: 980px) {
+        font-size: 11px;
     }
 `;
 const ItemCount = styled.small`
@@ -286,6 +300,9 @@ const PayOptions = styled.div``;
 const Options = styled.ul`
     display: flex;
     justify-content: center;
+    @media all and (max-width: 980px) {
+        flex-wrap: wrap;
+    }
 `;
 const FirstOption = styled.li`
     margin-right: 12px;
@@ -342,6 +359,14 @@ const OrderButton = styled.button`
     @media all and (max-width: 1050px) {
         width: 210px;
         height: 54px;
+    }
+    @media all and (max-width: 980px) {
+        width: 110px;
+        height: 64px;
+        font-size: 16px;
+    }
+    @media all and (max-width: 768px) {
+        margin: 0;
     }
 `;
 const PayButton = styled.button`

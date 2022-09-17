@@ -482,8 +482,11 @@ function MiddleSection() {
 export default MiddleSection;
 
 const Container = styled.section`
-    width: 65%;
+    width: 70%;
     background: #000;
+    @media all and (max-width: 640px) {
+        width: 100%;
+    }
 `;
 
 const Form = styled.form`
@@ -497,6 +500,9 @@ const Input = styled.input`
     background: #212121;
     color: #fff;
     font-size: 16px;
+    @media all and (max-width: 980px) {
+        padding: 11px 26px;
+    }
 `;
 const SearchIcon = styled.img`
     position: absolute;
@@ -615,7 +621,7 @@ const Item8 = styled.div`
     justify-content: space-between;
     @media all and (max-width: 1280px) {
         grid-area: 4 / 2 / 5 / 3;
-    } ;
+    }
 `;
 const ItemIcon = styled.span`
     display: inline-block;
@@ -651,7 +657,11 @@ const BottomProducts = styled.div`
     @media all and (max-width: 1280px) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-    } ;
+    }
+    @media all and (max-width: 480px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
 `;
 const BItem1 = styled.div`
     grid-area: 1 / 1 / 2 / 2;
@@ -661,7 +671,10 @@ const BItem1 = styled.div`
     padding: 12px;
     @media all and (max-width: 1280px) {
         grid-area: 1 / 1 / 2 / 2;
-    } ;
+    }
+    @media all and (max-width: 480px) {
+        grid-area: 1 / 1 / 2 / 2;
+    }
 `;
 const BItem2 = styled.div`
     grid-area: 1 / 2 / 2 / 3;
@@ -671,7 +684,10 @@ const BItem2 = styled.div`
     padding: 12px;
     @media all and (max-width: 1280px) {
         grid-area: 1 / 2 / 2 / 3;
-    } ;
+    }
+    @media all and (max-width: 480px) {
+        grid-area: 2 / 1 / 3 / 2;
+    }
 `;
 const BItem3 = styled.div`
     grid-area: 1 / 3 / 2 / 4;
@@ -801,6 +817,8 @@ const Minus = styled.img`
 const BottomCountSec = styled.section`
     display: flex;
     border-top: 1px solid #909091;
+    @media all and (max-width: 640px) {
+    }
 `;
 const CountFisrt = styled.div`
     border-right: 1px solid #909091;
@@ -833,6 +851,9 @@ const TButton1 = styled.span`
     margin-left: 20px;
     font-size: 24px;
     color: #000;
+    @media all and (max-width: 768px) {
+        padding: 6px 10px;
+    }
 `;
 const TButton2 = styled.span`
     background: #3e3e3e;
@@ -842,6 +863,9 @@ const TButton2 = styled.span`
     margin-left: 20px;
     font-size: 24px;
     color: #fff;
+    @media all and (max-width: 768px) {
+        padding: 6px 10px;
+    }
 `;
 const TButton3 = styled.span`
     background: #2c2d2c;
@@ -851,10 +875,16 @@ const TButton3 = styled.span`
     margin-left: 20px;
     font-size: 24px;
     color: #fff;
+    @media all and (max-width: 768px) {
+        padding: 6px 10px;
+    }
 `;
 const CountName = styled.h4`
     color: #fff;
     margin-left: 18px;
+    @media all and (max-width: 768px) {
+        font-size: 14px;
+    }
 `;
 const CountNameDiv = styled.div`
     display: flex;

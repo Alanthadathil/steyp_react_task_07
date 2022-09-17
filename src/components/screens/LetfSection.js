@@ -63,11 +63,17 @@ const Container = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media all and (max-width: 768px) {
+        display: none;
+    }
 `;
 const TopSection = styled.div``;
 const Logo = styled.h1`
     width: 180px;
     cursor: pointer;
+    @media all and (max-width: 980px) {
+        width: 124px;
+    }
 `;
 const LogoImg = styled.img`
     width: 100%;
@@ -92,6 +98,9 @@ const ListItem = styled.li`
     }
     @media all and (max-width: 1050px) {
         font-size: 16px;
+    }
+    @media all and (max-width: 980px) {
+        padding: 16px 0px;
     }
 `;
 const BottomSection = styled.div``;
@@ -126,6 +135,9 @@ const BtnCaption = styled.small`
     color: #fff;
     font-size: 18px;
     display: inline-block;
+    @media all and (max-width: 980px) {
+        font-size: 14px;
+    }
 `;
 const CopyRight = styled.img``;
 const CopyText = styled.small`
