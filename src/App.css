@@ -18,7 +18,7 @@ del {
 	text-decoration: line-through;
 }
 body {
-	font-family:  'Oswald',Arial, Helvetica, sans-serif;
+	font-family:  'Poppins',Arial, Helvetica, sans-serif;
 	font-size: 17px;
 	color: #1F1111;
 	overflow-x: hidden;
@@ -26,7 +26,7 @@ body {
 	font-weight: 500;
 }
 input,textarea,select{
-	font-family:  Arial, Helvetica, sans-serif;
+	font-family:  'Poppins',Arial, Helvetica, sans-serif;
 	font-weight: 500;
 }
 
@@ -40,10 +40,13 @@ a{
 	display: block;
 	width:100%;
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins";
+}
 p{
 	line-height:1.6em;
 	font-size: 16px;
-	font-family:  'Oswald',Arial;
+	font-family:  'Poppins',Arial;
 	font-weight: normal;
 	color: #000;
 }

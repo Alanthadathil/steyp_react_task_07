@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import LogoSrc from "../../assets/images/logo.png";
 import CopyImg from "../../assets/images/Copyright-color.svg";
+import { Link, NavLink } from "react-router-dom";
 
 function LetfSection() {
     return (
@@ -12,11 +13,31 @@ function LetfSection() {
                         <LogoImg src={LogoSrc} />
                     </Logo>
                     <List>
-                        <ListItem>Reservation</ListItem>
-                        <ListItem>Table Service</ListItem>
-                        <ListItem>Menu</ListItem>
-                        <ListItem>Delivery</ListItem>
-                        <ListItem>Accounting</ListItem>
+                        <ListItem>
+                            <NavLink to="/" className="activeLink">
+                                Reservation
+                            </NavLink>
+                        </ListItem>
+                        <ListItem>
+                            <NavLink to="/" className="activeLink">
+                                Table Service
+                            </NavLink>
+                        </ListItem>
+                        <ListItem>
+                            <NavLink to="/" className="activeLink">
+                                Menu
+                            </NavLink>
+                        </ListItem>
+                        <ListItem>
+                            <NavLink to="/" className="activeLink">
+                                Delivery
+                            </NavLink>
+                        </ListItem>
+                        <ListItem>
+                            <NavLink to="/" className="activeLink">
+                                Accounting
+                            </NavLink>
+                        </ListItem>
                     </List>
                 </TopSection>
                 <BottomSection>
@@ -24,7 +45,6 @@ function LetfSection() {
                         <BtnLogo>L</BtnLogo>
                         <BtnCaption>Lesliya k.</BtnCaption>
                     </Bottombtn>
-
                     <Bottombtn>
                         <BtnLogo>C</BtnLogo>
                         <BtnCaption>Camaron w.</BtnCaption>
@@ -76,6 +96,12 @@ const ListItem = styled.li`
         background: #212121;
         border-radius: 8px;
         color: #fff;
+    }
+    @media all and (max-width: 1440px) {
+        font-size: 18px;
+    }
+    @media all and (max-width: 1050px) {
+        font-size: 16px;
     }
 `;
 const BottomSection = styled.div``;

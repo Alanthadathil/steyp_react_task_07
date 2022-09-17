@@ -7,7 +7,7 @@ function MiddleSection() {
         <>
             <Container>
                 <Form>
-                    <Input type="text" value="" placeholder="Search" />
+                    <Input placeholder="Search" />
                     <SearchIcon src={SearchImg} />
                 </Form>
                 <ProductSection>
@@ -37,7 +37,7 @@ function MiddleSection() {
                                     />
                                 </ItemIcon>
                                 <ItemDetails>
-                                    <ItemName>Soup</ItemName>
+                                    <ItemName>Soups</ItemName>
                                     <ItemQ>13 item</ItemQ>
                                 </ItemDetails>
                             </Item2>
@@ -484,8 +484,10 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
-    padding: 16px 24px;
+    padding: 16px 26px;
     background: #212121;
+    color: #fff;
+    font-size: 16px;
 `;
 const SearchIcon = styled.img`
     position: absolute;
@@ -505,7 +507,10 @@ const Products = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
-    height: 350px;
+    @media all and (max-width: 1280px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    } ;
 `;
 const Item1 = styled.div`
     grid-area: 1 / 1 / 2 / 2;
@@ -515,6 +520,9 @@ const Item1 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media all and (max-width: 1280px) {
+        grid-area: 1 / 1 / 2 / 2;
+    } ;
 `;
 const Item2 = styled.div`
     grid-area: 1 / 2 / 2 / 3;
@@ -524,6 +532,9 @@ const Item2 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media all and (max-width: 1280px) {
+        grid-area: 1 / 2 / 2 / 3;
+    } ;
 `;
 const Item3 = styled.div`
     grid-area: 1 / 3 / 2 / 4;
@@ -533,6 +544,9 @@ const Item3 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media all and (max-width: 1280px) {
+        grid-area: 2 / 1 / 3 / 2;
+    } ;
 `;
 const Item4 = styled.div`
     grid-area: 1 / 4 / 2 / 5;
@@ -542,6 +556,9 @@ const Item4 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media all and (max-width: 1280px) {
+        grid-area: 2 / 2 / 3 / 3;
+    } ;
 `;
 const Item5 = styled.div`
     grid-area: 2 / 1 / 3 / 2;
@@ -551,6 +568,9 @@ const Item5 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media all and (max-width: 1280px) {
+        grid-area: 3 / 1 / 4 / 2;
+    } ;
 `;
 const Item6 = styled.div`
     grid-area: 2 / 2 / 3 / 3;
@@ -560,6 +580,9 @@ const Item6 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media all and (max-width: 1280px) {
+        grid-area: 3 / 2 / 4 / 3;
+    } ;
 `;
 const Item7 = styled.div`
     grid-area: 2 / 3 / 3 / 4;
@@ -569,6 +592,9 @@ const Item7 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media all and (max-width: 1280px) {
+        grid-area: 4 / 1 / 5 / 2;
+    } ;
 `;
 const Item8 = styled.div`
     grid-area: 2 / 4 / 3 / 5;
@@ -578,6 +604,9 @@ const Item8 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media all and (max-width: 1280px) {
+        grid-area: 4 / 2 / 5 / 3;
+    } ;
 `;
 const ItemIcon = styled.span`
     display: inline-block;
@@ -589,8 +618,10 @@ const Icon = styled.img`
     display: inline-block;
 `;
 const ItemName = styled.h3`
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 12px;
+    font-family: "Poppins";
+    font-weight: 500;
 `;
 const ItemDetails = styled.div`
     margin: 0 0 12px 12px;
@@ -608,6 +639,10 @@ const BottomProducts = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
+    @media all and (max-width: 1280px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    } ;
 `;
 const BItem1 = styled.div`
     grid-area: 1 / 1 / 2 / 2;
@@ -615,6 +650,9 @@ const BItem1 = styled.div`
     border-radius: 8px;
     cursor: pointer;
     padding: 12px;
+    @media all and (max-width: 1280px) {
+        grid-area: 1 / 1 / 2 / 2;
+    } ;
 `;
 const BItem2 = styled.div`
     grid-area: 1 / 2 / 2 / 3;
@@ -622,6 +660,9 @@ const BItem2 = styled.div`
     border-radius: 8px;
     cursor: pointer;
     padding: 12px;
+    @media all and (max-width: 1280px) {
+        grid-area: 1 / 2 / 2 / 3;
+    } ;
 `;
 const BItem3 = styled.div`
     grid-area: 1 / 3 / 2 / 4;
@@ -629,6 +670,9 @@ const BItem3 = styled.div`
     border-radius: 8px;
     cursor: pointer;
     padding: 12px;
+    @media all and (max-width: 1280px) {
+        grid-area: 2 / 1 / 3 / 2;
+    } ;
 `;
 const BItem4 = styled.div`
     grid-area: 1 / 4 / 2 / 5;
@@ -636,6 +680,9 @@ const BItem4 = styled.div`
     border-radius: 8px;
     cursor: pointer;
     padding: 12px;
+    @media all and (max-width: 1280px) {
+        grid-area: 2 / 2 / 3 / 3;
+    } ;
 `;
 const BItem5 = styled.div`
     grid-area: 2 / 1 / 3 / 2;
@@ -643,6 +690,9 @@ const BItem5 = styled.div`
     border-radius: 8px;
     cursor: pointer;
     padding: 12px;
+    @media all and (max-width: 1280px) {
+        grid-area: 3 / 1 / 4 / 2;
+    } ;
 `;
 const BItem6 = styled.div`
     grid-area: 2 / 2 / 3 / 3;
@@ -650,6 +700,9 @@ const BItem6 = styled.div`
     border-radius: 8px;
     cursor: pointer;
     padding: 12px;
+    @media all and (max-width: 1280px) {
+        grid-area: 3 / 2 / 4 / 3;
+    } ;
 `;
 const BItem7 = styled.div`
     grid-area: 2 / 3 / 3 / 4;
@@ -657,6 +710,9 @@ const BItem7 = styled.div`
     border-radius: 8px;
     cursor: pointer;
     padding: 12px;
+    @media all and (max-width: 1280px) {
+        grid-area: 4 / 1 / 5 / 2;
+    } ;
 `;
 const BItem8 = styled.div`
     grid-area: 2 / 4 / 3 / 5;
@@ -664,6 +720,9 @@ const BItem8 = styled.div`
     border-radius: 8px;
     cursor: pointer;
     padding: 12px;
+    @media all and (max-width: 1280px) {
+        grid-area: 4 / 2 / 5 / 3;
+    } ;
 `;
 const ItemTop = styled.div`
     display: flex;
@@ -673,6 +732,7 @@ const ItemTop = styled.div`
 `;
 const Orders = styled.span`
     color: #909091;
+    font-size: 16px;
 `;
 const Arrow = styled.span`
     display: inline-block;
@@ -685,11 +745,13 @@ const ArrowImg = styled.img`
 `;
 const Kitchen = styled.span`
     color: #909091;
+    font-size: 16px;
 `;
 const BItemName = styled.h3`
     font-size: 18px;
     color: #fff;
     margin-bottom: 8px;
+    font-weight: 500;
 `;
 const Price = styled.h5`
     color: #909091;
@@ -789,4 +851,7 @@ const CountNameDiv = styled.div`
     display: flex;
     align-items: center;
     padding-left: 20px;
+    @media all and (max-width: 1280px) {
+        flex-wrap: wrap;
+    }
 `;
