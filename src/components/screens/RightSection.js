@@ -279,6 +279,9 @@ const SecondPrice = styled.h5`
 const OrderBottom = styled.div`
     margin-top: 20px;
     color: #fff;
+    @media all and (max-width: 768px) {
+        width: 174px;
+    }
 `;
 const TotalText = styled.h3``;
 const TotalPrice = styled.h3``;
@@ -286,6 +289,9 @@ const TotalDiv = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media all and (max-width: 768px) {
+        width: 145px;
+    }
 `;
 const PaymentDiv = styled.div`
     margin-top: 164px;
@@ -364,9 +370,6 @@ const OrderButton = styled.button`
         width: 110px;
         height: 64px;
         font-size: 16px;
-    }
-    @media all and (max-width: 768px) {
-        margin: 0;
     }
 `;
 const PayButton = styled.button`

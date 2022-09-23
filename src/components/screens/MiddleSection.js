@@ -637,6 +637,9 @@ const ItemName = styled.h3`
     margin-bottom: 12px;
     font-family: "Poppins";
     font-weight: 500;
+    @media all and (max-width: 360px) {
+        font-size: 16px;
+    }
 `;
 const ItemDetails = styled.div`
     margin: 0 0 12px 12px;
@@ -644,6 +647,9 @@ const ItemDetails = styled.div`
 const ItemQ = styled.h5`
     font-size: 16px;
     color: #878180;
+    @media all and (max-width: 360px) {
+        font-size: 14px;
+    }
 `;
 const BottomSection = styled.section`
     padding: 20px 20px 34px 20px;
@@ -697,7 +703,10 @@ const BItem3 = styled.div`
     padding: 12px;
     @media all and (max-width: 1280px) {
         grid-area: 2 / 1 / 3 / 2;
-    } ;
+    }
+    @media all and (max-width: 480px) {
+        grid-area: 3 / 1 / 4 / 2;
+    }
 `;
 const BItem4 = styled.div`
     grid-area: 1 / 4 / 2 / 5;
@@ -707,7 +716,10 @@ const BItem4 = styled.div`
     padding: 12px;
     @media all and (max-width: 1280px) {
         grid-area: 2 / 2 / 3 / 3;
-    } ;
+    }
+    @media all and (max-width: 480px) {
+        grid-area: 4 / 1 / 5 / 2;
+    }
 `;
 const BItem5 = styled.div`
     grid-area: 2 / 1 / 3 / 2;
@@ -717,7 +729,10 @@ const BItem5 = styled.div`
     padding: 12px;
     @media all and (max-width: 1280px) {
         grid-area: 3 / 1 / 4 / 2;
-    } ;
+    }
+    @media all and (max-width: 480px) {
+        grid-area: 5 / 1 / 6 / 2;
+    }
 `;
 const BItem6 = styled.div`
     grid-area: 2 / 2 / 3 / 3;
@@ -727,7 +742,10 @@ const BItem6 = styled.div`
     padding: 12px;
     @media all and (max-width: 1280px) {
         grid-area: 3 / 2 / 4 / 3;
-    } ;
+    }
+    @media all and (max-width: 480px) {
+        grid-area: 6 / 1 / 7 / 2;
+    }
 `;
 const BItem7 = styled.div`
     grid-area: 2 / 3 / 3 / 4;
@@ -737,7 +755,10 @@ const BItem7 = styled.div`
     padding: 12px;
     @media all and (max-width: 1280px) {
         grid-area: 4 / 1 / 5 / 2;
-    } ;
+    }
+    @media all and (max-width: 480px) {
+        grid-area: 7 / 1 / 8 / 2;
+    }
 `;
 const BItem8 = styled.div`
     grid-area: 2 / 4 / 3 / 5;
@@ -747,7 +768,10 @@ const BItem8 = styled.div`
     padding: 12px;
     @media all and (max-width: 1280px) {
         grid-area: 4 / 2 / 5 / 3;
-    } ;
+    }
+    @media all and (max-width: 480px) {
+        grid-area: 8 / 1 / 9 / 2;
+    }
 `;
 const ItemTop = styled.div`
     display: flex;
@@ -777,6 +801,9 @@ const BItemName = styled.h3`
     color: #fff;
     margin-bottom: 8px;
     font-weight: 500;
+    @media all and (max-width: 360px) {
+        font-size: 16px;
+    }
 `;
 const Price = styled.h5`
     color: #909091;
@@ -817,7 +844,8 @@ const Minus = styled.img`
 const BottomCountSec = styled.section`
     display: flex;
     border-top: 1px solid #909091;
-    @media all and (max-width: 640px) {
+    @media all and (max-width: 480px) {
+        display: none;
     }
 `;
 const CountFisrt = styled.div`
@@ -827,6 +855,9 @@ const CountFisrt = styled.div`
     width: 33.3%;
     flex-wrap: wrap;
     padding-top: 20px;
+    @media all and (max-width: 768px) {
+        padding: 25px;
+    }
 `;
 const CountSecond = styled.div`
     border-right: 1px solid #909091;
@@ -835,6 +866,9 @@ const CountSecond = styled.div`
     width: 33.3%;
     flex-wrap: wrap;
     padding-top: 20px;
+    @media all and (max-width: 768px) {
+        padding: 25px;
+    }
 `;
 const CountThird = styled.div`
     display: flex;
@@ -842,6 +876,9 @@ const CountThird = styled.div`
     width: 33.3%;
     flex-wrap: wrap;
     padding-top: 20px;
+    @media all and (max-width: 768px) {
+        padding: 25px;
+    }
 `;
 const TButton1 = styled.span`
     background: #c8cbee;
@@ -883,7 +920,7 @@ const CountName = styled.h4`
     color: #fff;
     margin-left: 18px;
     @media all and (max-width: 768px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 `;
 const CountNameDiv = styled.div`
